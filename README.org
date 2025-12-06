@@ -1,0 +1,51 @@
+#+title: Vanya2025 video
+#+author: Clovis144
+#+description: Video for 12.12.2025 date
+
+* Table of contecns :toc:
+- [[#about][About]]
+- [[#development][Development]]
+  - [[#install-dependencies][Install dependencies]]
+  - [[#virtual-env][Virtual env]]
+  - [[#enter-virtual-env][Enter virtual env]]
+  - [[#install-manim-in-virtual-env][Install manim in virtual env]]
+- [[#run][Run]]
+  - [[#debug][Debug]]
+  - [[#release][Release]]
+- [[#build][Build]]
+
+* About
+This is my video project for 12.12.2025 (and 12.12.2024 also).
+
+Here is the final [[./video.mp4][video]].
+
+* Development
+** Install dependencies
+#+BEGIN_SRC shell
+sudo apt install python3-dev python3-pip python3-venv ffmpeg
+#+END_SRC
+** Virtual env
+#+BEGIN_SRC shell
+python3 -m venv manim-env
+#+END_SRC
+** Enter virtual env
+#+BEGIN_SRC shell
+source manim-env/bin/activate
+#+END_SRC
+** Install manim in virtual env
+#+BEGIN_SRC shell
+pip install manim
+#+END_SRC
+
+* Run
+** Debug
+#+BEGIN_SRC shell
+manim -pql main.py main
+#+END_SRC
+** Release
+#+BEGIN_SRC shell
+manim -qh main.py main
+#+END_SRC
+
+* Build
+To build project you just need to concat ~./media/videos/main/1080p60/main.mp4~ *manim output video* and ~./reources/isaac-dance-cut.mp4~. You can do this in any way convenient for you, the easiest is to just use a video editor.
