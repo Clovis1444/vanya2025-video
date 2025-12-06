@@ -16,6 +16,7 @@
 
 * About
 This is my video project for 12.12.2025 (and 12.12.2024 also).
+
 Here is the final [[./video.mp4][video]].
 
 * Development
@@ -48,4 +49,5 @@ manim -qh main.py main
 
 * Build
 To build project you just need to concat ~./media/videos/main/1080p60/main.mp4~ *manim output video* and ~./reources/isaac-dance-cut.mp4~ /video files/.
+
 You can do this in any way convenient for you, the easiest is to just use a video editor.
